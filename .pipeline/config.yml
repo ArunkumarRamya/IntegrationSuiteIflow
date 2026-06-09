@@ -2,11 +2,11 @@ general:
   pipeline: "sap-integration-suite-artifacts"
 steps:
   integrationArtifactUpload:
-    cpiApiServiceKeyCredentialsId: "cpi-service-api"
+    cpiApiServiceKeyCredentialsId: "cpi-service-api-latest"
     integrationFlowId: IF_CICD_Demo
     integrationFlowName: IF_CICD_Demo
     packageId: "CICD_Package_Demo"
     filePath: "CICDPackageDemo_artifacts.zip"
   integrationArtifactDeploy:
-    cpiApiServiceKeyCredentialsId: "cpi-service-api"
+    cpiApiServiceKeyCredentialsId: "cpi-service-api-latest"
     integrationFlowId: "IF_CICD_Demo"
